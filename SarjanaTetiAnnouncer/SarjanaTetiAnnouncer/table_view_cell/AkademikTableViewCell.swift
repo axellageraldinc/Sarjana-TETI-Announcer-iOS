@@ -15,6 +15,7 @@ class AkademikTableViewCell: UITableViewCell {
     @IBOutlet weak var lblTitle: UILabel!
     @IBOutlet weak var lblId: UILabel!
     @IBOutlet weak var cardView: UIView!
+    @IBOutlet weak var txtDescription: UITextView!
     
     let labelCategoryCornerRadius = 2.0
     let cellBackgroundColor = UIColor(red: 240/255, green: 240/255, blue: 240/255, alpha: 1.0)
@@ -29,6 +30,9 @@ class AkademikTableViewCell: UITableViewCell {
         // Initialization code
         lblCategory.layer.masksToBounds = true
         lblCategory.layer.cornerRadius = CGFloat(labelCategoryCornerRadius)
+        txtDescription.textContainer.maximumNumberOfLines = 3
+        txtDescription.textContainerInset = .zero
+        txtDescription.textContainer.lineFragmentPadding = 0
 //        contentView.backgroundColor = cellBackgroundColor
 //        cardView.backgroundColor = cardViewBackgroundColor
         cardView.layer.cornerRadius = CGFloat(cardViewCornerRadius)

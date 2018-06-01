@@ -20,86 +20,14 @@
                         <color key="separatorColor" white="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <inset key="separatorInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
                         <prototypes>
-                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="AkademikTableViewCell" rowHeight="70" id="uXs-X0-Ti7" customClass="AkademikTableViewCell" customModule="SarjanaTetiAnnouncer" customModuleProvider="target">
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" rowHeight="70" id="uXs-X0-Ti7" customClass="AkademikTableViewCell" customModule="SarjanaTetiAnnouncer" customModuleProvider="target">
                                 <rect key="frame" x="0.0" y="28" width="375" height="70"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="uXs-X0-Ti7" id="MMe-4j-eY5">
                                     <rect key="frame" x="0.0" y="0.0" width="375" height="70"/>
                                     <autoresizingMask key="autoresizingMask"/>
-                                    <subviews>
-                                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="4uG-BH-DYD">
-                                            <rect key="frame" x="4" y="4" width="367" height="62"/>
-                                            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                        </view>
-                                        <label opaque="NO" userInteractionEnabled="NO" alpha="0.0" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="6kY-2R-LWQ">
-                                            <rect key="frame" x="0.0" y="0.0" width="375" height="20.5"/>
-                                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                            <nil key="textColor"/>
-                                            <nil key="highlightedColor"/>
-                                        </label>
-                                        <stackView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Lnp-2C-1ds">
-                                            <rect key="frame" x="12" y="12" width="351" height="13.5"/>
-                                            <subviews>
-                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Category" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="HXn-Dj-3zf" customClass="CategoryUiLabel" customModule="SarjanaTetiAnnouncer" customModuleProvider="target">
-                                                    <rect key="frame" x="0.0" y="0.0" width="52" height="13.5"/>
-                                                    <fontDescription key="fontDescription" type="boldSystem" pointSize="11"/>
-                                                    <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                                    <nil key="highlightedColor"/>
-                                                    <userDefinedRuntimeAttributes>
-                                                        <userDefinedRuntimeAttribute type="number" keyPath="topInset">
-                                                            <real key="value" value="0.0"/>
-                                                        </userDefinedRuntimeAttribute>
-                                                        <userDefinedRuntimeAttribute type="number" keyPath="bottomInset">
-                                                            <real key="value" value="0.0"/>
-                                                        </userDefinedRuntimeAttribute>
-                                                        <userDefinedRuntimeAttribute type="number" keyPath="leftInset">
-                                                            <real key="value" value="2"/>
-                                                        </userDefinedRuntimeAttribute>
-                                                        <userDefinedRuntimeAttribute type="number" keyPath="rightInset">
-                                                            <real key="value" value="2"/>
-                                                        </userDefinedRuntimeAttribute>
-                                                    </userDefinedRuntimeAttributes>
-                                                </label>
-                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" verticalHuggingPriority="251" text="Date" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="85z-je-XKV">
-                                                    <rect key="frame" x="52" y="0.0" width="299" height="13.5"/>
-                                                    <fontDescription key="fontDescription" type="system" pointSize="11"/>
-                                                    <color key="textColor" white="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                                    <nil key="highlightedColor"/>
-                                                </label>
-                                            </subviews>
-                                        </stackView>
-                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Title" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="CRt-xJ-Ifh">
-                                            <rect key="frame" x="12" y="29.5" width="351" height="28.5"/>
-                                            <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="14"/>
-                                            <nil key="textColor"/>
-                                            <nil key="highlightedColor"/>
-                                        </label>
-                                    </subviews>
-                                    <constraints>
-                                        <constraint firstItem="4uG-BH-DYD" firstAttribute="leading" secondItem="MMe-4j-eY5" secondAttribute="leading" constant="4" id="EMM-eo-x3f"/>
-                                        <constraint firstItem="6kY-2R-LWQ" firstAttribute="top" secondItem="MMe-4j-eY5" secondAttribute="top" id="IF1-tJ-Wmc"/>
-                                        <constraint firstItem="4uG-BH-DYD" firstAttribute="trailing" secondItem="CRt-xJ-Ifh" secondAttribute="trailing" constant="8" id="PpN-Pd-Jww"/>
-                                        <constraint firstItem="Lnp-2C-1ds" firstAttribute="leading" secondItem="4uG-BH-DYD" secondAttribute="leading" constant="8" id="YMX-Ss-PK4"/>
-                                        <constraint firstItem="4uG-BH-DYD" firstAttribute="top" secondItem="MMe-4j-eY5" secondAttribute="top" constant="4" id="e1C-Bx-mh6"/>
-                                        <constraint firstAttribute="trailing" secondItem="6kY-2R-LWQ" secondAttribute="trailing" id="i53-JY-887"/>
-                                        <constraint firstItem="4uG-BH-DYD" firstAttribute="bottom" secondItem="CRt-xJ-Ifh" secondAttribute="bottom" constant="8" id="ngJ-k8-86m"/>
-                                        <constraint firstAttribute="trailing" secondItem="4uG-BH-DYD" secondAttribute="trailing" constant="4" id="pXu-JU-NwD"/>
-                                        <constraint firstAttribute="bottom" secondItem="4uG-BH-DYD" secondAttribute="bottom" constant="4" id="qAq-mv-pPK"/>
-                                        <constraint firstItem="6kY-2R-LWQ" firstAttribute="leading" secondItem="MMe-4j-eY5" secondAttribute="leading" id="qwx-jK-UA0"/>
-                                        <constraint firstItem="CRt-xJ-Ifh" firstAttribute="top" secondItem="Lnp-2C-1ds" secondAttribute="bottom" constant="4" id="u4e-7i-xtd"/>
-                                        <constraint firstItem="CRt-xJ-Ifh" firstAttribute="leading" secondItem="4uG-BH-DYD" secondAttribute="leading" constant="8" id="wRP-3P-z1h"/>
-                                        <constraint firstItem="4uG-BH-DYD" firstAttribute="trailing" secondItem="Lnp-2C-1ds" secondAttribute="trailing" constant="8" id="yX0-I8-1jo"/>
-                                        <constraint firstItem="Lnp-2C-1ds" firstAttribute="top" secondItem="4uG-BH-DYD" secondAttribute="top" constant="8" id="zuh-Qd-XL2"/>
-                                    </constraints>
                                 </tableViewCellContentView>
                                 <color key="backgroundColor" red="0.94117647058823528" green="0.94117647058823528" blue="0.94117647058823528" alpha="1" colorSpace="calibratedRGB"/>
-                                <connections>
-                                    <outlet property="cardView" destination="4uG-BH-DYD" id="kVj-WA-6xT"/>
-                                    <outlet property="lblCategory" destination="HXn-Dj-3zf" id="Vdd-k3-Y9u"/>
-                                    <outlet property="lblDate" destination="85z-je-XKV" id="trd-2f-1du"/>
-                                    <outlet property="lblId" destination="6kY-2R-LWQ" id="2js-uk-t3R"/>
-                                    <outlet property="lblTitle" destination="CRt-xJ-Ifh" id="DCK-vy-zNF"/>
-                                </connections>
                             </tableViewCell>
                         </prototypes>
                         <connections>
@@ -133,11 +61,11 @@
             </objects>
             <point key="canvasLocation" x="-279" y="500"/>
         </scene>
-        <!--Teti Announcer-->
+        <!--Main Tab Bar Controller-->
         <scene sceneID="82m-Ns-UXm">
             <objects>
-                <tabBarController id="b6k-5d-cro" sceneMemberID="viewController">
-                    <navigationItem key="navigationItem" title="Teti Announcer" id="XXS-IS-nux"/>
+                <tabBarController id="b6k-5d-cro" customClass="MainTabBarController" customModule="SarjanaTetiAnnouncer" customModuleProvider="target" sceneMemberID="viewController">
+                    <navigationItem key="navigationItem" id="XXS-IS-nux"/>
                     <tabBar key="tabBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="v2s-Z3-dli">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="49"/>
                         <autoresizingMask key="autoresizingMask"/>

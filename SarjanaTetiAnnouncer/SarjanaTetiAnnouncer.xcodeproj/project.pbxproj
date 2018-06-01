@@ -21,6 +21,7 @@
 		C099B7FB20C113DE0059DEAE /* BottomSheetUiView.xib in Resources */ = {isa = PBXBuildFile; fileRef = C099B7FA20C113DE0059DEAE /* BottomSheetUiView.xib */; };
 		C099B7FD20C114060059DEAE /* BottomSheetUiView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C099B7FC20C114060059DEAE /* BottomSheetUiView.swift */; };
 		C099B80020C16FFF0059DEAE /* AkademikTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = C099B7FF20C16FFF0059DEAE /* AkademikTableViewCell.xib */; };
+		C099B80220C17E440059DEAE /* MainTabBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C099B80120C17E440059DEAE /* MainTabBarController.swift */; };
 		E9C3FF64A95F81D45D962698 /* Pods_SarjanaTetiAnnouncer.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FC9763BFF3C0783BE4A6F703 /* Pods_SarjanaTetiAnnouncer.framework */; };
 /* End PBXBuildFile section */
 
@@ -43,6 +44,7 @@
 		C099B7FA20C113DE0059DEAE /* BottomSheetUiView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = BottomSheetUiView.xib; sourceTree = "<group>"; };
 		C099B7FC20C114060059DEAE /* BottomSheetUiView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BottomSheetUiView.swift; sourceTree = "<group>"; };
 		C099B7FF20C16FFF0059DEAE /* AkademikTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = AkademikTableViewCell.xib; sourceTree = "<group>"; };
+		C099B80120C17E440059DEAE /* MainTabBarController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainTabBarController.swift; sourceTree = "<group>"; };
 		FC9763BFF3C0783BE4A6F703 /* Pods_SarjanaTetiAnnouncer.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_SarjanaTetiAnnouncer.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
@@ -98,6 +100,7 @@
 		C07BB37120BF95890042D8CF /* SarjanaTetiAnnouncer */ = {
 			isa = PBXGroup;
 			children = (
+				C099B80320C183490059DEAE /* bottom_sheet */,
 				C099B7E720C0FF520059DEAE /* custom_view */,
 				C099B7E620C0FF350059DEAE /* controller */,
 				C04AACE020C022C000C0733C /* table_view_cell */,
@@ -125,6 +128,7 @@
 			children = (
 				C07BB37420BF95890042D8CF /* AkademikTableViewController.swift */,
 				C04AACD220C0117700C0733C /* BeasiswaTableViewController.swift */,
+				C099B80120C17E440059DEAE /* MainTabBarController.swift */,
 			);
 			path = controller;
 			sourceTree = "<group>";
@@ -133,10 +137,17 @@
 			isa = PBXGroup;
 			children = (
 				C04AACE520C0440400C0733C /* CategoryUiLabel.swift */,
+			);
+			path = custom_view;
+			sourceTree = "<group>";
+		};
+		C099B80320C183490059DEAE /* bottom_sheet */ = {
+			isa = PBXGroup;
+			children = (
 				C099B7FA20C113DE0059DEAE /* BottomSheetUiView.xib */,
 				C099B7FC20C114060059DEAE /* BottomSheetUiView.swift */,
 			);
-			path = custom_view;
+			path = bottom_sheet;
 			sourceTree = "<group>";
 		};
 		E3017C96B4C5A2968A5E0B29 /* Frameworks */ = {
@@ -272,6 +283,7 @@
 				C04AACE620C0440400C0733C /* CategoryUiLabel.swift in Sources */,
 				C04AACD520C013DA00C0733C /* Beasiswa.swift in Sources */,
 				C07BB38620BFD3C10042D8CF /* Akademik.swift in Sources */,
+				C099B80220C17E440059DEAE /* MainTabBarController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

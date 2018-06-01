@@ -17,6 +17,8 @@ class AkademikTableViewController: UITableViewController {
     var akademik: Akademik! = nil
     let url = URL(string: "http://sarjana.jteti.ugm.ac.id/akademik")
 
+    let nib = UINib.init(nibName: "AkademikTableViewCell", bundle: nil)
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         let activityIndicatorView = UIActivityIndicatorView(activityIndicatorStyle: UIActivityIndicatorViewStyle.gray)
@@ -34,6 +36,7 @@ class AkademikTableViewController: UITableViewController {
                 self.getAkademikInformationFromSarjanaJtetiWebsite()
                 DispatchQueue.main.async {
                     // Update the UI to indicate the work has been completed
+                    self.tableView.register(self.nib, forCellReuseIdentifier: "AkademikTableViewCell")
                     self.tableView.reloadData()
                     self.activityIndicatorView.stopAnimating()
                     UIApplication.shared.endIgnoringInteractionEvents()
@@ -180,6 +183,7 @@ class AkademikTableViewController: UITableViewController {
             let color = hexStringToUIColor(hex: "#F5BE02")
             cell.lblCategory!.backgroundColor = color
         }
+        cell.txtDescription.text = akademik.description
         cell.lblDate!.text = akademik.date
         cell.lblTitle!.text = akademik.title
         return cell
