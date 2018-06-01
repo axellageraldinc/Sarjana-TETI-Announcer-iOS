@@ -1,0 +1,474 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		C04AACD320C0117700C0733C /* BeasiswaTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C04AACD220C0117700C0733C /* BeasiswaTableViewController.swift */; };
+		C04AACD520C013DA00C0733C /* Beasiswa.swift in Sources */ = {isa = PBXBuildFile; fileRef = C04AACD420C013DA00C0733C /* Beasiswa.swift */; };
+		C04AACE220C022D700C0733C /* AkademikTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = C04AACE120C022D700C0733C /* AkademikTableViewCell.swift */; };
+		C04AACE620C0440400C0733C /* CategoryUiLabel.swift in Sources */ = {isa = PBXBuildFile; fileRef = C04AACE520C0440400C0733C /* CategoryUiLabel.swift */; };
+		C07BB37320BF95890042D8CF /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C07BB37220BF95890042D8CF /* AppDelegate.swift */; };
+		C07BB37520BF95890042D8CF /* AkademikTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C07BB37420BF95890042D8CF /* AkademikTableViewController.swift */; };
+		C07BB37820BF95890042D8CF /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C07BB37620BF95890042D8CF /* Main.storyboard */; };
+		C07BB37A20BF958A0042D8CF /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C07BB37920BF958A0042D8CF /* Assets.xcassets */; };
+		C07BB37D20BF958A0042D8CF /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C07BB37B20BF958A0042D8CF /* LaunchScreen.storyboard */; };
+		C07BB38620BFD3C10042D8CF /* Akademik.swift in Sources */ = {isa = PBXBuildFile; fileRef = C07BB38520BFD3C10042D8CF /* Akademik.swift */; };
+		C099B7E520C0FD490059DEAE /* BeasiswaTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = C099B7E420C0FD490059DEAE /* BeasiswaTableViewCell.swift */; };
+		C099B7FB20C113DE0059DEAE /* BottomSheetUiView.xib in Resources */ = {isa = PBXBuildFile; fileRef = C099B7FA20C113DE0059DEAE /* BottomSheetUiView.xib */; };
+		C099B7FD20C114060059DEAE /* BottomSheetUiView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C099B7FC20C114060059DEAE /* BottomSheetUiView.swift */; };
+		C099B80020C16FFF0059DEAE /* AkademikTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = C099B7FF20C16FFF0059DEAE /* AkademikTableViewCell.xib */; };
+		E9C3FF64A95F81D45D962698 /* Pods_SarjanaTetiAnnouncer.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FC9763BFF3C0783BE4A6F703 /* Pods_SarjanaTetiAnnouncer.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		033EFAC5531CBA1996FB6DD0 /* Pods-SarjanaTetiAnnouncer.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SarjanaTetiAnnouncer.release.xcconfig"; path = "Pods/Target Support Files/Pods-SarjanaTetiAnnouncer/Pods-SarjanaTetiAnnouncer.release.xcconfig"; sourceTree = "<group>"; };
+		2053D7D4B4D26D584292398A /* Pods-SarjanaTetiAnnouncer.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SarjanaTetiAnnouncer.debug.xcconfig"; path = "Pods/Target Support Files/Pods-SarjanaTetiAnnouncer/Pods-SarjanaTetiAnnouncer.debug.xcconfig"; sourceTree = "<group>"; };
+		C04AACD220C0117700C0733C /* BeasiswaTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BeasiswaTableViewController.swift; sourceTree = "<group>"; };
+		C04AACD420C013DA00C0733C /* Beasiswa.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Beasiswa.swift; sourceTree = "<group>"; };
+		C04AACE120C022D700C0733C /* AkademikTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AkademikTableViewCell.swift; sourceTree = "<group>"; };
+		C04AACE520C0440400C0733C /* CategoryUiLabel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CategoryUiLabel.swift; sourceTree = "<group>"; };
+		C07BB36F20BF95890042D8CF /* SarjanaTetiAnnouncer.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SarjanaTetiAnnouncer.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		C07BB37220BF95890042D8CF /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		C07BB37420BF95890042D8CF /* AkademikTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AkademikTableViewController.swift; sourceTree = "<group>"; };
+		C07BB37720BF95890042D8CF /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		C07BB37920BF958A0042D8CF /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		C07BB37C20BF958A0042D8CF /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		C07BB37E20BF958A0042D8CF /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		C07BB38520BFD3C10042D8CF /* Akademik.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Akademik.swift; sourceTree = "<group>"; };
+		C099B7E420C0FD490059DEAE /* BeasiswaTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BeasiswaTableViewCell.swift; sourceTree = "<group>"; };
+		C099B7FA20C113DE0059DEAE /* BottomSheetUiView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = BottomSheetUiView.xib; sourceTree = "<group>"; };
+		C099B7FC20C114060059DEAE /* BottomSheetUiView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BottomSheetUiView.swift; sourceTree = "<group>"; };
+		C099B7FF20C16FFF0059DEAE /* AkademikTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = AkademikTableViewCell.xib; sourceTree = "<group>"; };
+		FC9763BFF3C0783BE4A6F703 /* Pods_SarjanaTetiAnnouncer.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_SarjanaTetiAnnouncer.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		C07BB36C20BF95890042D8CF /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E9C3FF64A95F81D45D962698 /* Pods_SarjanaTetiAnnouncer.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		B567AC39005AB3657844B7B6 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				2053D7D4B4D26D584292398A /* Pods-SarjanaTetiAnnouncer.debug.xcconfig */,
+				033EFAC5531CBA1996FB6DD0 /* Pods-SarjanaTetiAnnouncer.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		C04AACE020C022C000C0733C /* table_view_cell */ = {
+			isa = PBXGroup;
+			children = (
+				C04AACE120C022D700C0733C /* AkademikTableViewCell.swift */,
+				C099B7E420C0FD490059DEAE /* BeasiswaTableViewCell.swift */,
+				C099B7FF20C16FFF0059DEAE /* AkademikTableViewCell.xib */,
+			);
+			path = table_view_cell;
+			sourceTree = "<group>";
+		};
+		C07BB36620BF95890042D8CF = {
+			isa = PBXGroup;
+			children = (
+				C07BB37120BF95890042D8CF /* SarjanaTetiAnnouncer */,
+				C07BB37020BF95890042D8CF /* Products */,
+				B567AC39005AB3657844B7B6 /* Pods */,
+				E3017C96B4C5A2968A5E0B29 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		C07BB37020BF95890042D8CF /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				C07BB36F20BF95890042D8CF /* SarjanaTetiAnnouncer.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		C07BB37120BF95890042D8CF /* SarjanaTetiAnnouncer */ = {
+			isa = PBXGroup;
+			children = (
+				C099B7E720C0FF520059DEAE /* custom_view */,
+				C099B7E620C0FF350059DEAE /* controller */,
+				C04AACE020C022C000C0733C /* table_view_cell */,
+				C07BB38420BFD3970042D8CF /* model */,
+				C07BB37220BF95890042D8CF /* AppDelegate.swift */,
+				C07BB37620BF95890042D8CF /* Main.storyboard */,
+				C07BB37920BF958A0042D8CF /* Assets.xcassets */,
+				C07BB37B20BF958A0042D8CF /* LaunchScreen.storyboard */,
+				C07BB37E20BF958A0042D8CF /* Info.plist */,
+			);
+			path = SarjanaTetiAnnouncer;
+			sourceTree = "<group>";
+		};
+		C07BB38420BFD3970042D8CF /* model */ = {
+			isa = PBXGroup;
+			children = (
+				C07BB38520BFD3C10042D8CF /* Akademik.swift */,
+				C04AACD420C013DA00C0733C /* Beasiswa.swift */,
+			);
+			path = model;
+			sourceTree = "<group>";
+		};
+		C099B7E620C0FF350059DEAE /* controller */ = {
+			isa = PBXGroup;
+			children = (
+				C07BB37420BF95890042D8CF /* AkademikTableViewController.swift */,
+				C04AACD220C0117700C0733C /* BeasiswaTableViewController.swift */,
+			);
+			path = controller;
+			sourceTree = "<group>";
+		};
+		C099B7E720C0FF520059DEAE /* custom_view */ = {
+			isa = PBXGroup;
+			children = (
+				C04AACE520C0440400C0733C /* CategoryUiLabel.swift */,
+				C099B7FA20C113DE0059DEAE /* BottomSheetUiView.xib */,
+				C099B7FC20C114060059DEAE /* BottomSheetUiView.swift */,
+			);
+			path = custom_view;
+			sourceTree = "<group>";
+		};
+		E3017C96B4C5A2968A5E0B29 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				FC9763BFF3C0783BE4A6F703 /* Pods_SarjanaTetiAnnouncer.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		C07BB36E20BF95890042D8CF /* SarjanaTetiAnnouncer */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = C07BB38120BF958A0042D8CF /* Build configuration list for PBXNativeTarget "SarjanaTetiAnnouncer" */;
+			buildPhases = (
+				513A1B2971C22B15C4DE3933 /* [CP] Check Pods Manifest.lock */,
+				C07BB36B20BF95890042D8CF /* Sources */,
+				C07BB36C20BF95890042D8CF /* Frameworks */,
+				C07BB36D20BF95890042D8CF /* Resources */,
+				ED6B51F7C4E1712EE9C5FFB8 /* [CP] Embed Pods Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = SarjanaTetiAnnouncer;
+			productName = SarjanaTetiAnnouncer;
+			productReference = C07BB36F20BF95890042D8CF /* SarjanaTetiAnnouncer.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		C07BB36720BF95890042D8CF /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0930;
+				LastUpgradeCheck = 0930;
+				ORGANIZATIONNAME = "Axellageraldinc Adryamarthanino";
+				TargetAttributes = {
+					C07BB36E20BF95890042D8CF = {
+						CreatedOnToolsVersion = 9.3.1;
+					};
+				};
+			};
+			buildConfigurationList = C07BB36A20BF95890042D8CF /* Build configuration list for PBXProject "SarjanaTetiAnnouncer" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = C07BB36620BF95890042D8CF;
+			productRefGroup = C07BB37020BF95890042D8CF /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				C07BB36E20BF95890042D8CF /* SarjanaTetiAnnouncer */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		C07BB36D20BF95890042D8CF /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C07BB37D20BF958A0042D8CF /* LaunchScreen.storyboard in Resources */,
+				C099B7FB20C113DE0059DEAE /* BottomSheetUiView.xib in Resources */,
+				C099B80020C16FFF0059DEAE /* AkademikTableViewCell.xib in Resources */,
+				C07BB37A20BF958A0042D8CF /* Assets.xcassets in Resources */,
+				C07BB37820BF95890042D8CF /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		513A1B2971C22B15C4DE3933 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-SarjanaTetiAnnouncer-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		ED6B51F7C4E1712EE9C5FFB8 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-SarjanaTetiAnnouncer/Pods-SarjanaTetiAnnouncer-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/Bottomsheet/Bottomsheet.framework",
+				"${BUILT_PRODUCTS_DIR}/SwiftSoup/SwiftSoup.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Bottomsheet.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SwiftSoup.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-SarjanaTetiAnnouncer/Pods-SarjanaTetiAnnouncer-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		C07BB36B20BF95890042D8CF /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C07BB37520BF95890042D8CF /* AkademikTableViewController.swift in Sources */,
+				C099B7FD20C114060059DEAE /* BottomSheetUiView.swift in Sources */,
+				C04AACE220C022D700C0733C /* AkademikTableViewCell.swift in Sources */,
+				C07BB37320BF95890042D8CF /* AppDelegate.swift in Sources */,
+				C04AACD320C0117700C0733C /* BeasiswaTableViewController.swift in Sources */,
+				C099B7E520C0FD490059DEAE /* BeasiswaTableViewCell.swift in Sources */,
+				C04AACE620C0440400C0733C /* CategoryUiLabel.swift in Sources */,
+				C04AACD520C013DA00C0733C /* Beasiswa.swift in Sources */,
+				C07BB38620BFD3C10042D8CF /* Akademik.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		C07BB37620BF95890042D8CF /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				C07BB37720BF95890042D8CF /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		C07BB37B20BF958A0042D8CF /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				C07BB37C20BF958A0042D8CF /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		C07BB37F20BF958A0042D8CF /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.3;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		C07BB38020BF958A0042D8CF /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.3;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		C07BB38220BF958A0042D8CF /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 2053D7D4B4D26D584292398A /* Pods-SarjanaTetiAnnouncer.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = SarjanaTetiAnnouncer/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.axell.SarjanaTetiAnnouncer;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		C07BB38320BF958A0042D8CF /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 033EFAC5531CBA1996FB6DD0 /* Pods-SarjanaTetiAnnouncer.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = SarjanaTetiAnnouncer/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.axell.SarjanaTetiAnnouncer;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		C07BB36A20BF95890042D8CF /* Build configuration list for PBXProject "SarjanaTetiAnnouncer" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C07BB37F20BF958A0042D8CF /* Debug */,
+				C07BB38020BF958A0042D8CF /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		C07BB38120BF958A0042D8CF /* Build configuration list for PBXNativeTarget "SarjanaTetiAnnouncer" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C07BB38220BF958A0042D8CF /* Debug */,
+				C07BB38320BF958A0042D8CF /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = C07BB36720BF95890042D8CF /* Project object */;
+}

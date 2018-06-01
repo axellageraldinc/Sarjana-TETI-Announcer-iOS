@@ -1,0 +1,20 @@
+PODS:
+  - Bottomsheet (1.4.0)
+  - SwiftSoup (1.6.1)
+
+DEPENDENCIES:
+  - Bottomsheet
+  - SwiftSoup
+
+SPEC REPOS:
+  https://github.com/cocoapods/specs.git:
+    - Bottomsheet
+    - SwiftSoup
+
+SPEC CHECKSUMS:
+  Bottomsheet: e1b1f2251694457eaab4599fab1ec5eede5a537e
+  SwiftSoup: 1eedf56f751b36035ae6c95562f86944c9cfafee
+
+PODFILE CHECKSUM: d14cb21af701fc066c47e4e8ee0b8ad8d90bd0b1
+
+COCOAPODS: 1.5.2

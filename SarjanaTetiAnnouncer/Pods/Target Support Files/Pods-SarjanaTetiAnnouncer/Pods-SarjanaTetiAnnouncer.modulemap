@@ -1,0 +1,6 @@
+framework module Pods_SarjanaTetiAnnouncer {
+  umbrella header "Pods-SarjanaTetiAnnouncer-umbrella.h"
+
+  export *
+  module * { export * }
+}
