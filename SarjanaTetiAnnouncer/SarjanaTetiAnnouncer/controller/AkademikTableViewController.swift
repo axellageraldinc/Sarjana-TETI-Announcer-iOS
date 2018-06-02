@@ -21,6 +21,11 @@ class AkademikTableViewController: UITableViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+        let refreshControl = UIRefreshControl()
+        refreshControl.addTarget(self, action:  #selector(refreshSarjanaJtetiAkademik), for: UIControlEvents.valueChanged)
+        self.refreshControl = refreshControl
+        
         let activityIndicatorView = UIActivityIndicatorView(activityIndicatorStyle: UIActivityIndicatorViewStyle.gray)
         tableView.backgroundView = activityIndicatorView
         tableView.separatorStyle = UITableViewCellSeparatorStyle.none
@@ -29,9 +34,9 @@ class AkademikTableViewController: UITableViewController {
     
     override func viewWillAppear(_ animated: Bool) {
         if (self.akademikList == nil) {
-            UIApplication.shared.beginIgnoringInteractionEvents()
+//            UIApplication.shared.beginIgnoringInteractionEvents()
             activityIndicatorView.startAnimating()
-            DispatchQueue.global(qos: .background).async {
+            DispatchQueue.global(qos: .userInteractive).async {
                 // Do some background work
                 self.getAkademikInformationFromSarjanaJtetiWebsite()
                 DispatchQueue.main.async {
@@ -39,8 +44,21 @@ class AkademikTableViewController: UITableViewController {
                     self.tableView.register(self.nib, forCellReuseIdentifier: "AkademikTableViewCell")
                     self.tableView.reloadData()
                     self.activityIndicatorView.stopAnimating()
-                    UIApplication.shared.endIgnoringInteractionEvents()
+//                    UIApplication.shared.endIgnoringInteractionEvents()
                 }
+            }
+        }
+    }
+    
+    @objc func refreshSarjanaJtetiAkademik() {
+        DispatchQueue.global(qos: .userInteractive).async {
+            // Do some background work
+            self.getAkademikInformationFromSarjanaJtetiWebsite()
+            DispatchQueue.main.async {
+                // Update the UI to indicate the work has been completed
+                self.tableView.register(self.nib, forCellReuseIdentifier: "AkademikTableViewCell")
+                self.tableView.reloadData()
+                self.refreshControl!.endRefreshing()
             }
         }
     }
@@ -65,33 +83,33 @@ class AkademikTableViewController: UITableViewController {
     func getSarjanaJtetiAkademikTableContent(sarjanaJtetiAkademikInformationTableContents: Elements) -> [Akademik] {
         var informationList = [Akademik]()
         for content in sarjanaJtetiAkademikInformationTableContents {
-            let id = getNewsId(content: content)
-            let title = getNewsTitle(content: content)
-            let category = getNewsCategory(content: content)
-            let description = getNewsDescription(content: content)
-            let date = getNewsDate(content: content)
-            let additionalMaterialDownloadLink = getNewsUrl(content: content)
+            let id = getId(content: content)
+            let title = getTitle(content: content)
+            let category = getCategory(content: content)
+            let description = getDescription(content: content)
+            let date = getDate(content: content)
+            let additionalMaterialDownloadLink = getDownloadUrl(content: content)
             let information = Akademik(id: id, title: title, category: category, description: description, date: date, downloadUrl: additionalMaterialDownloadLink)
             informationList.append(information)
         }
         return informationList
     }
     
-    func getNewsId(content: Element) -> String {
+    func getId(content: Element) -> String {
         return (content.parents().first()?.id())!
     }
     
-    func getNewsTitle(content: Element) -> String {
+    func getTitle(content: Element) -> String {
         return try! content.select("b").text()
     }
     
-    func getNewsCategory(content: Element) -> String {
+    func getCategory(content: Element) -> String {
         return try! content.select("span.label").text()
     }
     
-    func getNewsDescription(content: Element) -> String {
+    func getDescription(content: Element) -> String {
         let bodyText = try! content.text().split(separator: " ")
-        let title = getNewsTitle(content: content)
+        let title = getTitle(content: content)
         let titleSize = title.split(separator: " ").count
         var x: Int = 4 + titleSize
         var description = ""
@@ -99,14 +117,14 @@ class AkademikTableViewController: UITableViewController {
             description += bodyText[x] + " "
             x+=1
         }
-        let linkDownload = getNewsUrl(content: content)
+        let linkDownload = getDownloadUrl(content: content)
         if(!linkDownload.isEmpty) {
             description = String(description.dropLast(9))
         }
         return description
     }
     
-    func getNewsDate(content: Element) -> String {
+    func getDate(content: Element) -> String {
         var y = 1
         var date = ""
         let bodyText = try! content.text().split(separator: " ")
@@ -117,7 +135,7 @@ class AkademikTableViewController: UITableViewController {
         return date
     }
     
-    func getNewsUrl(content: Element) -> String {
+    func getDownloadUrl(content: Element) -> String {
         let linkDownload = try! content.select("a.btn").attr("href")
         if (!linkDownload.isEmpty) {
             return "http://sarjana.jteti.ugm.ac.id" + linkDownload

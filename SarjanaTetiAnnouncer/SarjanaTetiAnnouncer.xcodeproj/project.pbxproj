@@ -11,6 +11,7 @@
 		C04AACD520C013DA00C0733C /* Beasiswa.swift in Sources */ = {isa = PBXBuildFile; fileRef = C04AACD420C013DA00C0733C /* Beasiswa.swift */; };
 		C04AACE220C022D700C0733C /* AkademikTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = C04AACE120C022D700C0733C /* AkademikTableViewCell.swift */; };
 		C04AACE620C0440400C0733C /* CategoryUiLabel.swift in Sources */ = {isa = PBXBuildFile; fileRef = C04AACE520C0440400C0733C /* CategoryUiLabel.swift */; };
+		C073F96D20C2792E00B57B1D /* BeasiswaTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = C073F96C20C2792E00B57B1D /* BeasiswaTableViewCell.xib */; };
 		C07BB37320BF95890042D8CF /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C07BB37220BF95890042D8CF /* AppDelegate.swift */; };
 		C07BB37520BF95890042D8CF /* AkademikTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C07BB37420BF95890042D8CF /* AkademikTableViewController.swift */; };
 		C07BB37820BF95890042D8CF /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C07BB37620BF95890042D8CF /* Main.storyboard */; };
@@ -32,6 +33,7 @@
 		C04AACD420C013DA00C0733C /* Beasiswa.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Beasiswa.swift; sourceTree = "<group>"; };
 		C04AACE120C022D700C0733C /* AkademikTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AkademikTableViewCell.swift; sourceTree = "<group>"; };
 		C04AACE520C0440400C0733C /* CategoryUiLabel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CategoryUiLabel.swift; sourceTree = "<group>"; };
+		C073F96C20C2792E00B57B1D /* BeasiswaTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = BeasiswaTableViewCell.xib; sourceTree = "<group>"; };
 		C07BB36F20BF95890042D8CF /* SarjanaTetiAnnouncer.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SarjanaTetiAnnouncer.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		C07BB37220BF95890042D8CF /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		C07BB37420BF95890042D8CF /* AkademikTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AkademikTableViewController.swift; sourceTree = "<group>"; };
@@ -73,8 +75,9 @@
 			isa = PBXGroup;
 			children = (
 				C04AACE120C022D700C0733C /* AkademikTableViewCell.swift */,
-				C099B7E420C0FD490059DEAE /* BeasiswaTableViewCell.swift */,
 				C099B7FF20C16FFF0059DEAE /* AkademikTableViewCell.xib */,
+				C099B7E420C0FD490059DEAE /* BeasiswaTableViewCell.swift */,
+				C073F96C20C2792E00B57B1D /* BeasiswaTableViewCell.xib */,
 			);
 			path = table_view_cell;
 			sourceTree = "<group>";
@@ -218,6 +221,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C073F96D20C2792E00B57B1D /* BeasiswaTableViewCell.xib in Resources */,
 				C07BB37D20BF958A0042D8CF /* LaunchScreen.storyboard in Resources */,
 				C099B7FB20C113DE0059DEAE /* BottomSheetUiView.xib in Resources */,
 				C099B80020C16FFF0059DEAE /* AkademikTableViewCell.xib in Resources */,

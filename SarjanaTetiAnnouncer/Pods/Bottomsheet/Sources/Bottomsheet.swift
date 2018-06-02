@@ -369,8 +369,8 @@ open class Bottomsheet {
         }
         @objc dynamic func handleGestureDragging(_ gestureRecognizer: UIPanGestureRecognizer) {
             let gestureView = gestureRecognizer.view
-            let point = gestureRecognizer.translation(in: gestureView)
-            let originY = maxHeight - initializeHeight
+//            let point = gestureRecognizer.translation(in: gestureView)
+//            let originY = maxHeight - initializeHeight
             switch state {
 //            case .show:
 //                switch gestureRecognizer.state {

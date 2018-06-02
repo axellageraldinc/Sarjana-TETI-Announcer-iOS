@@ -11,17 +11,15 @@ import Foundation
 class Beasiswa {
     let id: String
     let title: String
-    let category: String
-    let description: String?
+    let deadline: String
+    let detailUrl: String
     let date: String
-    let downloadUrl: String?
     
-    init(id: String, title: String, category: String, description: String, date: String, downloadUrl: String) {
+    init(id: String, title: String, deadline: String, detailUrl: String, date: String) {
         self.id=id
         self.title=title
-        self.category=category
-        self.description=description
+        self.deadline=deadline
+        self.detailUrl=detailUrl
         self.date=date
-        self.downloadUrl=downloadUrl
     }
 }
